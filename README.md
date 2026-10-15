@@ -2,7 +2,11 @@
 
 An unofficial BONELAB backup APK for Meta Quest 3S, with built-in wireless-debugging pairing. The app itself is named **BONELAB Backup**.
 
-[Download the APK](https://github.com/LCP-Git-Hub/Chaz-Bonelab-tool/releases/download/v0.1.0/BONELAB-Backup-Quest.apk) · [Release and source archive](https://github.com/LCP-Git-Hub/Chaz-Bonelab-tool/releases/tag/v0.1.0)
+[Download the APK](https://github.com/LCP-Git-Hub/Chaz-Bonelab-tool/releases/download/v0.1.1/BONELAB-Backup-Quest-v0.1.1.apk) · [Release and source archive](https://github.com/LCP-Git-Hub/Chaz-Bonelab-tool/releases/tag/v0.1.1)
+
+## Installation fix: v0.1.1
+
+The original v0.1.0 APK compressed its resource table, which Android 11+ rejects at installation. v0.1.1 keeps the table uncompressed and four-byte aligned, and adds a final-APK regression check. Download the new APK rather than reopening the old file. No BONELAB uninstall or game-data changes are needed for this fix. On-device installation remains unverified.
 
 ## Use on Quest
 
@@ -28,7 +32,7 @@ It copies external files only, not private Android app storage. There is **no re
 
 ## Source and licenses
 
-The release includes **BONELAB-Backup-Source.zip**, full setup notes, and an APK SHA-256 checksum. The source archive contains app code, build instructions, dependency binaries, notices, and the LGPL Spake2 library's corresponding sources.
+The release includes **BONELAB-Backup-Source-v0.1.1.zip**, full setup notes, and an APK SHA-256 checksum. The source archive contains app code, build instructions, dependency binaries, notices, and the LGPL Spake2 library's corresponding sources.
 
 Application source: GPL-3.0-or-later. Dependencies retain their respective licenses: libadb-android (Apache-2.0 option), Spake2 (LGPL-3.0), Conscrypt (Apache-2.0), Bouncy Castle (MIT-style), and AndroidX Annotation (Apache-2.0).
 
